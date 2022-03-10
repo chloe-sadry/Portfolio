@@ -37,30 +37,28 @@ return(
                         key={item.id}
                         firstname={item.firstname}
                         lastname={item.lastname}
-                        hobbies={item.hobbies}
-                        hobbiesTwo={item.hobbiesTwo}
+                        hobby={item.hobby}
+                        secondhobby={item.secondhobby}
                         />
                     ))}
                 </section>
                 :
                 <h4>Chargement</h4>
                 }
-            {/* <div className="description-content">
-                <p className="first-text-description"></p>
-            </div> */}
+            
             <div className="description-content">
                 <div className="speech-text-description">
                     <p className="first-text-description">
                         Je dessine et développe
                     </p>
-                    <p className="second-speech-description">Mon truc <span>c’est les nouvelles technologies,</span> surtout les petites machines dans ce style là </p>
+                    <p className="second-speech-description">Mon truc <span>c’est les nouvelles technologies,</span> surtout les machines dans ce style là </p>
                     {allpeople?
                         <div>
                             {allpeople.map((item) => (
                                 <PersonHobbies
                                 key={item.id}
-                                hobbies={item.hobbies}
-                                hobbiesTwo={item.hobbiesTwo}
+                                hobby={item.hobby}
+                                secondhobby={item.secondhobby}
                                 />
                             ))}
                         </div>

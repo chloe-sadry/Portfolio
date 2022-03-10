@@ -5,7 +5,7 @@
   font-family: 'Press Start 2P';
 }
 
-/* FIRST PAGE AND CONTAINER */
+                          /* FIRST PAGE AND CONTAINER */
 
 .firstpage{
   background-color: #0e091f;
@@ -362,7 +362,7 @@
   color: #EEEA82;
 }
 
-/* SECOND PAGE */
+                              /* SECOND PAGE */
 
 .secondpage{
   background-color: #0e091f;
@@ -375,6 +375,9 @@
 
 .secondpage .mid-content{
   background-color: #e246467c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 0px;
   padding-bottom: 0px;
   height: 700px;
@@ -396,9 +399,7 @@
   align-items: center;
 }
 
-.slide.active {
-  padding-top: 65px;
-}
+
 
 .slide.active {
   width: 100%;
@@ -433,7 +434,8 @@
 }
 
 .image {
-  width: 60%;
+  max-width: 100%;
+  max-height: 500px;
   border-radius: 10px;
 }
 
